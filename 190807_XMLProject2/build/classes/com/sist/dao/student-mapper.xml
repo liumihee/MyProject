@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.sist.dao.student-mapper"><!-- package(namespace) -->
+ <!-- (cache-ref | cache | resultMap* | parameterMap* | sql* | insert* | update* | delete* | select*)+ -->
+ 	<!-- 데이터 검색 -->
+ 	<!-- 
+ 		SELECT COUNT(*) FROM student			resultType="int"
+ 		SELECT name FROM student				resultType="String"
+ 		SELECT kor, eng, math FROM student		resultType="StudentVO"
+ 		
+ 		resultType		: 결과값(리턴형)
+ 		parameterType	: 매개변수
+ 	 -->
+ 	<select id="studentAllData" resultType="StudentVO">
+ 		SELECT * FROM student_view
+ 	</select>
+ </mapper>
