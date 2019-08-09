@@ -18,6 +18,7 @@
 </style>
 </head>
 <body>
+	<%-- 삭제하기 --%>
 	<div class="container">
 		<h2 class="text-center">삭제하기</h2>
 		<div class="row">
